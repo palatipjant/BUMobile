@@ -8,10 +8,72 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    let columns: [GridItem] = [
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
+    
     var body: some View {
         NavigationStack{
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                .navigationTitle("BU Mobile")
+            ScrollView{
+                VStack{
+                    NewsBanner()
+                        .padding()
+                    LazyVGrid(columns: columns){
+                        Rectangle()
+                            .background(.black)
+                            .frame(width: 170, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay {
+                                Text("Event")
+                                    .foregroundStyle(.white)
+                            }
+                        Rectangle()
+                            .background(.black)
+                            .frame(width: 170, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay {
+                                Text("Live")
+                                    .foregroundStyle(.white)
+                            }
+                        Rectangle()
+                            .background(.black)
+                            .frame(width: 170, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay {
+                                Text("Event")
+                                    .foregroundStyle(.white)
+                            }
+                        Rectangle()
+                            .background(.black)
+                            .frame(width: 170, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay {
+                                Text("Live")
+                                    .foregroundStyle(.white)
+                            }
+                        Rectangle()
+                            .background(.black)
+                            .frame(width: 170, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay {
+                                Text("Event")
+                                    .foregroundStyle(.white)
+                            }
+                        Rectangle()
+                            .background(.black)
+                            .frame(width: 170, height: 100)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .overlay {
+                                Text("Live")
+                                    .foregroundStyle(.white)
+                            }
+                    }
+                    .padding(.horizontal)
+                }
+            }
+            .navigationTitle("BU Mobile")
         }
     }
 }

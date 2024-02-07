@@ -9,9 +9,27 @@ import SwiftUI
 
 struct NewsBanner: View {
     var body: some View {
-        VStack{
+        ScrollView(.horizontal) {
+            HStack{
+                Image("Workshop SIPOC Model")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 350, height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                Image("Workshop SIPOC Model")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 350, height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                Image("Workshop SIPOC Model")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 350, height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 16))
+            }.padding(.horizontal)
             
         }
+        .scrollIndicators(.hidden)
     }
 }
 
