@@ -11,7 +11,7 @@ import SwiftUI
 struct BUMobileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BUHome()
         }
     }
 }
