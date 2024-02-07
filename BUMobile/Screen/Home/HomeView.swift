@@ -22,52 +22,49 @@ struct HomeView: View {
                         .padding()
                     LazyVGrid(columns: columns){
                         Rectangle()
-                            .background(.black)
-                            .frame(width: 170, height: 100)
+                            .foregroundStyle(.white)
+                            .frame(width: 170, height: 80)
                             .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .shadow(color: .gray, radius: 2)
                             .overlay {
                                 Text("Event")
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.black)
                             }
                         Rectangle()
-                            .background(.black)
-                            .frame(width: 170, height: 100)
+                            .foregroundStyle(.white)
+                            .frame(width: 170, height: 80)
                             .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .overlay {
-                                Text("Live")
-                                    .foregroundStyle(.white)
-                            }
-                        Rectangle()
-                            .background(.black)
-                            .frame(width: 170, height: 100)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .shadow(color: .gray, radius: 2)
                             .overlay {
                                 Text("Event")
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.black)
                             }
                         Rectangle()
-                            .background(.black)
-                            .frame(width: 170, height: 100)
+                            .foregroundStyle(.white)
+                            .frame(width: 170, height: 80)
                             .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .overlay {
-                                Text("Live")
-                                    .foregroundStyle(.white)
-                            }
-                        Rectangle()
-                            .background(.black)
-                            .frame(width: 170, height: 100)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .shadow(color: .gray, radius: 2)
                             .overlay {
                                 Text("Event")
-                                    .foregroundStyle(.white)
+                                    .foregroundStyle(.black)
                             }
                         Rectangle()
-                            .background(.black)
-                            .frame(width: 170, height: 100)
+                            .foregroundStyle(.white)
+                            .frame(width: 170, height: 80)
                             .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .shadow(color: .gray, radius: 2)
                             .overlay {
-                                Text("Live")
-                                    .foregroundStyle(.white)
+                                Text("Event")
+                                    .foregroundStyle(.black)
+                            }
+                        Rectangle()
+                            .foregroundStyle(.white)
+                            .frame(width: 170, height: 80)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                            .shadow(color: .gray, radius: 2)
+                            .overlay {
+                                Text("Event")
+                                    .foregroundStyle(.black)
                             }
                     }
                     .padding(.horizontal)
