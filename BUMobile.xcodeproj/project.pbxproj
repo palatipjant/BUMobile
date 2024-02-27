@@ -36,6 +36,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		649EC20F2B8DF3C8007AF46F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				649EC2102B8DF3CE007AF46F /* Cell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		649EC2102B8DF3CE007AF46F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		64E01FBA2B73534800CF4CDE = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +70,7 @@
 		64E01FC52B73534900CF4CDE /* BUMobile */ = {
 			isa = PBXGroup;
 			children = (
+				649EC20F2B8DF3C8007AF46F /* Components */,
 				64E01FDC2B73586400CF4CDE /* Views */,
 				64E01FD62B7353E700CF4CDE /* Screen */,
 				64E01FC62B73534900CF4CDE /* BUMobileApp.swift */,

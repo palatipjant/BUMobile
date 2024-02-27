@@ -11,63 +11,23 @@ struct HomeView: View {
     
     let columns: [GridItem] = [
             GridItem(.flexible()),
+            GridItem(.flexible()),
             GridItem(.flexible())
         ]
+    let menu: [String] = ["notices", "event", "video", "live", "services", "map", "PCI", "phone Book", "degrenn Plan", "links", "on Tour", "emergency", "call 1Stop", "line 1Stop", "about"]
     
     var body: some View {
         NavigationStack{
             ScrollView{
                 VStack{
                     NewsBanner()
-                        .padding()
+                        .padding(.vertical)
                     LazyVGrid(columns: columns){
-                        Rectangle()
-                            .foregroundStyle(.white)
-                            .frame(width: 170, height: 80)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .shadow(color: .gray, radius: 2)
-                            .overlay {
-                                Text("Event")
-                                    .foregroundStyle(.black)
-                            }
-                        Rectangle()
-                            .foregroundStyle(.white)
-                            .frame(width: 170, height: 80)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .shadow(color: .gray, radius: 2)
-                            .overlay {
-                                Text("Event")
-                                    .foregroundStyle(.black)
-                            }
-                        Rectangle()
-                            .foregroundStyle(.white)
-                            .frame(width: 170, height: 80)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .shadow(color: .gray, radius: 2)
-                            .overlay {
-                                Text("Event")
-                                    .foregroundStyle(.black)
-                            }
-                        Rectangle()
-                            .foregroundStyle(.white)
-                            .frame(width: 170, height: 80)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .shadow(color: .gray, radius: 2)
-                            .overlay {
-                                Text("Event")
-                                    .foregroundStyle(.black)
-                            }
-                        Rectangle()
-                            .foregroundStyle(.white)
-                            .frame(width: 170, height: 80)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .shadow(color: .gray, radius: 2)
-                            .overlay {
-                                Text("Event")
-                                    .foregroundStyle(.black)
-                            }
+                        ForEach(menu, id:\.self) { menu in
+                            HomeMenuButton(title: menu)
+                        }
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, 10)
                 }
             }
             .navigationTitle("BU Mobile")
@@ -77,4 +37,22 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+}
+
+struct HomeMenuButton: View {
+    
+    var title: String
+    
+    var body: some View {
+        Rectangle()
+            .foregroundStyle(.white)
+            .frame(width: 110, height: 80)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .shadow(color: .gray, radius: 2)
+            .overlay {
+                Text(title.capitalized)
+                    .foregroundStyle(.black)
+            }
+            .padding(10)
+    }
 }
