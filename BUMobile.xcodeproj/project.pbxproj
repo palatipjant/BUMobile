@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640F0A082B8F4CBB00DC10D1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640F0A072B8F4CBB00DC10D1 /* HomeViewModel.swift */; };
+		649EC2122B8DF952007AF46F /* HomeMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649EC2112B8DF952007AF46F /* HomeMenuButton.swift */; };
 		64E01FC72B73534900CF4CDE /* BUMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E01FC62B73534900CF4CDE /* BUMobileApp.swift */; };
 		64E01FCB2B73534B00CF4CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E01FCA2B73534B00CF4CDE /* Assets.xcassets */; };
 		64E01FCE2B73534B00CF4CDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E01FCD2B73534B00CF4CDE /* Preview Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		640F0A072B8F4CBB00DC10D1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		649EC2112B8DF952007AF46F /* HomeMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuButton.swift; sourceTree = "<group>"; };
 		64E01FC32B73534900CF4CDE /* BUMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E01FC62B73534900CF4CDE /* BUMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUMobileApp.swift; sourceTree = "<group>"; };
 		64E01FCA2B73534B00CF4CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		649EC2102B8DF3CE007AF46F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				649EC2112B8DF952007AF46F /* HomeMenuButton.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				64E01FDA2B73571700CF4CDE /* HomeView.swift */,
+				640F0A072B8F4CBB00DC10D1 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -208,7 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E01FDB2B73571700CF4CDE /* HomeView.swift in Sources */,
+				640F0A082B8F4CBB00DC10D1 /* HomeViewModel.swift in Sources */,
 				64E01FC72B73534900CF4CDE /* BUMobileApp.swift in Sources */,
+				649EC2122B8DF952007AF46F /* HomeMenuButton.swift in Sources */,
 				64E01FDF2B7358B800CF4CDE /* NewsBanner.swift in Sources */,
 				64E01FD52B7353E200CF4CDE /* BUHome.swift in Sources */,
 			);

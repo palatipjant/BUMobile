@@ -10,7 +10,7 @@ import SwiftUI
 struct NewsBanner: View {
     var body: some View {
         ScrollView(.horizontal) {
-            HStack{
+            LazyHStack{
                 Image("Workshop SIPOC Model")
                     .resizable()
                     .scaledToFill()
@@ -26,10 +26,13 @@ struct NewsBanner: View {
                     .scaledToFill()
                     .frame(width: 350, height: 200)
                     .clipShape(RoundedRectangle(cornerRadius: 16))
-            }.padding(.horizontal)
-            
+            }
+            .padding(.horizontal)
+            .scrollTargetLayout()
         }
         .scrollIndicators(.hidden)
+        .scrollTargetBehavior(.viewAligned)
+        .safeAreaPadding(.horizontal, 5)
     }
 }
 

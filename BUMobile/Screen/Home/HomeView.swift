@@ -14,23 +14,32 @@ struct HomeView: View {
             GridItem(.flexible()),
             GridItem(.flexible())
         ]
-    let menu: [String] = ["notices", "event", "video", "live", "services", "map", "PCI", "phone Book", "degrenn Plan", "links", "on Tour", "emergency", "call 1Stop", "line 1Stop", "about"]
     
     var body: some View {
         NavigationStack{
-            ScrollView{
-                VStack{
-                    NewsBanner()
-                        .padding(.vertical)
-                    LazyVGrid(columns: columns){
-                        ForEach(menu, id:\.self) { menu in
-                            HomeMenuButton(title: menu)
+            ZStack{
+                ScrollView{
+                    VStack{
+                        NewsBanner()
+                            .padding(.vertical)
+                        LazyVGrid(columns: columns){
+                            ForEach(menu_button.menu_data) { menu in
+                                MenuButton(title: menu.title, icon: menu.icon)
+                            }
                         }
+                        .padding(.horizontal, 10)
                     }
-                    .padding(.horizontal, 10)
                 }
             }
-            .navigationTitle("BU Mobile")
+//            .navigationTitle("BU Mobile")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("BU Mobile")
+                        .font(.title)
+                        .bold()
+                }
+            }
         }
     }
 }
@@ -39,20 +48,28 @@ struct HomeView: View {
     HomeView()
 }
 
-struct HomeMenuButton: View {
+struct MenuButton: View {
     
     var title: String
+    var icon: String
     
     var body: some View {
         Rectangle()
             .foregroundStyle(.white)
             .frame(width: 110, height: 80)
             .clipShape(RoundedRectangle(cornerRadius: 8))
-            .shadow(color: .gray, radius: 2)
             .overlay {
-                Text(title.capitalized)
-                    .foregroundStyle(.black)
+                VStack(spacing: 10){
+                    Image(systemName: icon)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 22)
+                    Text(title.capitalized)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
             }
             .padding(10)
+            .shadow(radius: 1)
     }
 }
