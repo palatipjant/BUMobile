@@ -24,7 +24,9 @@ struct HomeView: View {
                             .padding(.vertical)
                         LazyVGrid(columns: columns){
                             ForEach(menu_button.menu_data) { menu in
-                                MenuButton(title: menu.title, icon: menu.icon)
+                                NavigationLink(destination: menu.destination) {
+                                    MenuButton(title: menu.title, icon: menu.icon)
+                                }.foregroundStyle(.black)
                             }
                         }
                         .padding(.horizontal, 10)

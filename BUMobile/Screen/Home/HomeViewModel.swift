@@ -6,45 +6,61 @@
 //
 
 import Foundation
+import SwiftUI
 
-
-struct Menu: Codable, Identifiable {
+struct Menu: Identifiable {
     var id = UUID()
     let title: String
     let icon: String
+    let destination: AnyView
 }
 
 class menu_button {
     static let menu_data = [
         Menu(title: "Notices",
-             icon: "megaphone.fill"),
+             icon: "megaphone.fill", 
+             destination: AnyView(noticesView())),
         Menu(title: "Event",
-             icon: "calendar"),
+             icon: "calendar",
+             destination: AnyView(noticesView())),
         Menu(title: "Video",
-             icon: "video.fill"),
+             icon: "video.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Live",
-             icon: "tv.fill"),
+             icon: "tv.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Services",
-             icon: "person.fill"),
+             icon: "person.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Map",
-             icon: "map.fill"),
+             icon: "map.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "PCI",
-             icon: "pin.fill"),
+             icon: "pin.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Phone Book",
-             icon: "text.book.closed.fill"),
+             icon: "text.book.closed.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Degrenn Plan",
-             icon: "graduationcap.fill"),
+             icon: "graduationcap.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Links",
-             icon: "globe"),
+             icon: "globe",
+             destination: AnyView(noticesView())),
         Menu(title: "On Tour",
-             icon: "i.circle.fill"),
+             icon: "i.circle.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Emergency",
-             icon: "sos"),
+             icon: "sos",
+             destination: AnyView(noticesView())),
         Menu(title: "Call 1Stop",
-             icon: "phone.bubble.fill"),
+             icon: "phone.bubble.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "Line 1Stop",
-             icon: "person.bubble.fill"),
+             icon: "person.bubble.fill",
+             destination: AnyView(noticesView())),
         Menu(title: "About",
-             icon: "exclamationmark.circle.fill")
+             icon: "exclamationmark.circle.fill",
+             destination: AnyView(noticesView()))
     ]
 }
