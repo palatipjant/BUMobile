@@ -15,7 +15,7 @@ struct Menu: Identifiable {
     let destination: AnyView
 }
 
-class menu_button {
+class mockdata_menu {
     static let menu_data = [
         Menu(title: "Notices",
              icon: "megaphone.fill", 

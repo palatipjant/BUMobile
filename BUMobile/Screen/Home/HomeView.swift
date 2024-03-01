@@ -23,7 +23,7 @@ struct HomeView: View {
                         NewsBanner()
                             .padding(.vertical)
                         LazyVGrid(columns: columns){
-                            ForEach(menu_button.menu_data) { menu in
+                            ForEach(mockdata_menu.menu_data) { menu in
                                 NavigationLink(destination: menu.destination) {
                                     MenuButton(title: menu.title, icon: menu.icon)
                                 }.foregroundStyle(.black)
