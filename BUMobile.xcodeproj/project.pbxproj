@@ -10,6 +10,7 @@
 		640F0A082B8F4CBB00DC10D1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640F0A072B8F4CBB00DC10D1 /* HomeViewModel.swift */; };
 		6469BB1A2B91F41400380EC3 /* noticesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6469BB192B91F41300380EC3 /* noticesView.swift */; };
 		6469BB1C2B91F42300380EC3 /* noticesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6469BB1B2B91F42300380EC3 /* noticesViewModel.swift */; };
+		6469BB1F2B91FCB400380EC3 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6469BB1E2B91FCB400380EC3 /* EventView.swift */; };
 		649EC2122B8DF952007AF46F /* HomeMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649EC2112B8DF952007AF46F /* HomeMenuButton.swift */; };
 		64E01FC72B73534900CF4CDE /* BUMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E01FC62B73534900CF4CDE /* BUMobileApp.swift */; };
 		64E01FCB2B73534B00CF4CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E01FCA2B73534B00CF4CDE /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		640F0A072B8F4CBB00DC10D1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		6469BB192B91F41300380EC3 /* noticesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noticesView.swift; sourceTree = "<group>"; };
 		6469BB1B2B91F42300380EC3 /* noticesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noticesViewModel.swift; sourceTree = "<group>"; };
+		6469BB1E2B91FCB400380EC3 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		649EC2112B8DF952007AF46F /* HomeMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuButton.swift; sourceTree = "<group>"; };
 		64E01FC32B73534900CF4CDE /* BUMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BUMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E01FC62B73534900CF4CDE /* BUMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUMobileApp.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 				6469BB1B2B91F42300380EC3 /* noticesViewModel.swift */,
 			);
 			path = notices;
+			sourceTree = "<group>";
+		};
+		6469BB1D2B91FCA700380EC3 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				6469BB1E2B91FCB400380EC3 /* EventView.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 		649EC20F2B8DF3C8007AF46F /* Components */ = {
@@ -109,6 +119,7 @@
 		64E01FD62B7353E700CF4CDE /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				6469BB1D2B91FCA700380EC3 /* Event */,
 				6469BB182B91F40400380EC3 /* notices */,
 				64E01FD92B73570100CF4CDE /* Service */,
 				64E01FD82B7356F800CF4CDE /* News */,
@@ -230,6 +241,7 @@
 				64E01FDB2B73571700CF4CDE /* HomeView.swift in Sources */,
 				640F0A082B8F4CBB00DC10D1 /* HomeViewModel.swift in Sources */,
 				6469BB1C2B91F42300380EC3 /* noticesViewModel.swift in Sources */,
+				6469BB1F2B91FCB400380EC3 /* EventView.swift in Sources */,
 				64E01FC72B73534900CF4CDE /* BUMobileApp.swift in Sources */,
 				649EC2122B8DF952007AF46F /* HomeMenuButton.swift in Sources */,
 				64E01FDF2B7358B800CF4CDE /* NewsBanner.swift in Sources */,

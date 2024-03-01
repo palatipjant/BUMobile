@@ -22,7 +22,7 @@ class mockdata_menu {
              destination: AnyView(noticesView())),
         Menu(title: "Event",
              icon: "calendar",
-             destination: AnyView(noticesView())),
+             destination: AnyView(EventView())),
         Menu(title: "Video",
              icon: "video.fill",
              destination: AnyView(noticesView())),
